@@ -1,0 +1,39 @@
+{
+	"manifest_version": 2,
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "GooglePopupTranslate@webExtension.arielg.il",
+			"strict_min_version": "80.0"
+		}
+	},
+	"name": "Google Popup Translate",
+	"version": "1.0",
+	"description": "Google Popup Translation.",
+	"author": "arielg",
+	"permissions": [],
+	"icons": {
+		"16": "/icons/googlePopupTranslate.svg",
+		"32": "/icons/googlePopupTranslate.svg",
+		"48": "/icons/googlePopupTranslate.svg"
+	},
+	"browser_action": {
+		"browser_style": true,
+		"default_title": "Google Popup Translate",
+		"default_icon": {
+			"16": "/icons/googlePopupTranslate.svg",
+			"32": "/icons/googlePopupTranslate.svg",
+			"48": "/icons/googlePopupTranslate.svg",
+			"64": "/icons/googlePopupTranslate.svg",
+			"96": "/icons/googlePopupTranslate.svg"
+		},
+		"default_popup": "https://translate.google.com/?sl=iw&tl=en"
+	},
+	"commands": {
+		"_execute_browser_action": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+F11"
+			},
+			"description": "Open Popup Translation"
+		}
+	}
+}
