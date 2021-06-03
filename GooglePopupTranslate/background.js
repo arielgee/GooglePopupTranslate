@@ -15,12 +15,11 @@
 	////////////////////////////////////////////////////////////////////////////////////
 	function onRuntimeMessage(message, sender) {
 
-		if(message.id === "MSG_ID_GPT_CONTENT_SELECTION_CHANGE") {
+		if(message.id === "MSG_ID_GPT_TAB_SELECTION_CHANGE") {
 			browser.browserAction.setPopup({
 				tabId: sender.tab.id,
 				popup: m_defaultPopupURL + message.selection,
 			});
 		}
 	}
-
 })();
